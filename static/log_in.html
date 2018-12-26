@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<title>管理员登陆</title>
+		<link rel="stylesheet" href="lib/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+
+	<body class="beg-login-bg" background = " images/library.jpg">
+		<div class="beg-login-box">
+			<header>
+				<h1>欢迎登录图书管理系统</h1>
+			</header>
+			<div class="beg-login-main">
+				<form method="POST" class="layui-form" action="/library/login_check.php">
+					
+					<div class="layui-form-item">
+						<label class="beg-login-icon">
+                        <i class="layui-icon">&#xe612;</i>
+                    </label>
+						<input type="text" name="username" lay-verify="username" autocomplete="off" placeholder="请输入管理员ID" class="layui-input">
+					</div>
+					<div class="layui-form-item">
+						<label class="beg-login-icon">
+                        <i class="layui-icon">&#xe642;</i>
+                    </label>
+						<input type="password" name="password" lay-verify="password" autocomplete="off" placeholder="请输入密码" class="layui-input">
+					</div>
+					<br>
+					<input type="submit" value="确认登陆"/>
+					
+				</form>
+				<br>
+			</div>
+			<footer>
+				<p><a href="../index.html"><span style="color:#06F">返回首页</span></a></p>
+			</footer>
+
+		</div>
+	</body>
+
+
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>
+            输入卡号
+        </title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="./css/x-admin.css" media="all">
+    </head>
+	<body>
+		<div class="x-nav">
+            <span class="layui-breadcrumb" style="visibility:visible;">
+              <a><cite>首页</cite><span class="layui-box">></span></a>
+              <a><cite>管理员首页</cite><span class="layui-box">></span></a>
+              <a><cite>输入卡号</cite><span class="layui-box"></span></a>
+            </span>
+		</div>
+		
+		<div class="x-body">
+        <br>
+        <br>
+          <form class="layui-form x-center" action="/library/borrow_search.php" style="width:300px" method="GET">
+                  <div class="layui-form-pane">
+                    <div class="layui-form-item">
+                      <div class="layui-input-inline" style="width:220px">
+                        <input type="text" name="card_id"  placeholder="请输入卡号" class="layui-input">
+                      </div>
+                      <div class="layui-input-inline" style="width:60px">
+                          <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" />
+                      </div>
+                      <br>
+                    </div>
+                  </div> 
+          </form>
+	</div>
+
+	</body>
+</html>
