@@ -2,7 +2,7 @@
 
 ## book
 ```
-CREATE TABLE book (    
+CREATE TABLE Book (    
     book_id INT PRIMARY KEY,
     book_name VARCHAR(40) NOT NULL,
     type VARCHAR(30),
