@@ -25,17 +25,17 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no">
-        <link rel="stylesheet" href="./css/x-admin.css" media="all">
+        <link rel="stylesheet" href="static/css/x-admin.css" media="all">
     </head>
     <body>
         <div class="layui-layout layui-layout-admin">
             <div class="layui-header header header-demo">
                 <div class="layui-main">
                     <a class="logo" href="./index.html">
-                   		<img src="images/logo.png"></img>
+                   		<img src="static/images/logo.png"></img>
                     </a>
                     <ul class="layui-nav" lay-filter="">
-                    	<li class="layui-nav-item"><img src="images/0.jpg" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
+                    	<li class="layui-nav-item"><img src="static/images/0.jpg" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
                 		<li class="layui-nav-item">
 							<a href="javascript:;">
 								<?php echo "$name"?>
@@ -164,8 +164,8 @@
 		</div>
 	</body>
 
-	<script src="./lib/layui/layui.js" charset="utf-8"></script>
-    <script src="./js/x-admin.js"></script>
+	<script src="static/lib/layui/layui.js" charset="utf-8"></script>
+    <script src="static/js/x-admin.js"></script>
 
 </html>
 
