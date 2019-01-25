@@ -1,6 +1,5 @@
 <?php
 	header('Content-type:text/html;charset=utf-8');
-	echo '<pre>';
 	include_once 'mysql_helping_functions.php';
 	
     // Open session
