@@ -84,10 +84,17 @@
 
 	// function: insert one book into the DB
 	function insert_one_book($link, $book_id, $type, $book_name, $publisher, $year, $author, $price, $number, &$total_number, &$stock){
+<<<<<<< HEAD
 		$result = my_query($link,"select * from book where book_id = $book_id");
 		$num1 = mysqli_num_rows($result);
 		if($num1 != 0){
 			$result = my_query($link,"select * from book where book_id = $book_id and book_name = '{$book_name}' and author = '{$author}' and type = '{$type}' and publisher = '{$publisher}' and price = '{$price}' and year = '{$year}';");
+=======
+		$result = my_query($link,"select * from Book where book_id = $book_id");
+		$num1 = mysqli_num_rows($result);
+		if($num1 != 0){
+			$result = my_query($link,"select * from Book where book_id = $book_id and book_name = '{$book_name}' and author = '{$author}' and type = '{$type}' and publisher = '{$publisher}' and price = '{$price}' and year = '{$year}';");
+>>>>>>> 9bdd344edd3dffe995e74863617bb5230c7849c7
 			$num2 = mysqli_num_rows($result);
 			if($num2 == 0){
 				echo "Error: The book_id were already used by other book!";
@@ -103,7 +110,11 @@
 			}
 		}
 		else{
+<<<<<<< HEAD
 			$result = my_query($link,"insert into book values ($book_id, '{$book_name}', '{$type}', '{$publisher}', '{$author}', $price, $year, $number, $number);");
+=======
+			$result = my_query($link,"insert into Book values ($book_id, '{$type}', '{$book_name}', '{$publisher}', $year, '{$author}', $price, $number, $number);");
+>>>>>>> 9bdd344edd3dffe995e74863617bb5230c7849c7
 			$total_number = $number;
 			$stock = $number;
 			return true;
