@@ -154,7 +154,7 @@
                 </ul>
                 <div class="layui-tab-content site-demo site-demo-body">
                     <div class="layui-tab-item layui-show">
-                        <iframe frameborder="0" src="static/manage_book.html" class="x-iframe"></iframe>
+                        <iframe frameborder="0" src="library/static/manage_book.html" class="x-iframe"></iframe>
                     </div>
                 </div>
             </div>
@@ -164,8 +164,8 @@
 		</div>
 	</body>
 
-	<script src="static/lib/layui/layui.js" charset="utf-8"></script>
-    <script src="static/js/x-admin.js"></script>
+	<script src="library/static/lib/layui/layui.js" charset="utf-8"></script>
+    <script src="library/static/js/x-admin.js"></script>
 
 </html>
 
