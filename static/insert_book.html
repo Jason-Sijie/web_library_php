@@ -1,0 +1,114 @@
+<?php
+	if(empty($result)){
+		$result = 0;
+	}
+?>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>
+            图书录入
+        </title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="/library/static/css/x-admin.css" media="all">
+    </head>
+	<body>
+		<div class="x-nav">
+            <span class="layui-breadcrumb" style="visibility:visible;">
+              <a ><cite>首页</cite><span class="layui-box">></span></a>
+			  <a ><cite>管理员主页</cite><span class="layui-box">></span></a>
+			  <a><cite>图书录入</cite></a>
+            </span>
+		</div>
+		
+		<div class="x-body">
+			<form class="layui-form x-center" action="/library/insert_book.php" style="width:600px" method="POST">
+                <div class="layui-form-pane">
+                  <div class="layui-form-item">
+                    <div class="layui-input-inline" style="width:280px">
+                      <input type="text" name="book_id"  placeholder="书号" class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:280px">
+							<input type="text" name="book_name"  placeholder="书名"  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:280px">
+							<input type="text" name="type"  placeholder="类别"  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:280px">
+							<input type="text" name="author"  placeholder="作者"  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:280px">
+						<input type="text" name="publisher"  placeholder="出版社"  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:280px">
+							<input type="text" name="year"  placeholder="出版年份"  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:280px">
+							<input type="text" name="price"  placeholder='价格<100000'  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:200px">
+						<input type="text" name="number"  placeholder="数量"  class="layui-input">
+					</div>
+					<div class="layui-input-inline" style="width:0px">
+						<input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" />
+					</div>
+                        
+                  </div>
+                </div> 
+            </form>
+		</div>
+
+		<div class="x-body">
+			<form method = 'POST' class="layui-form x-center" style="width:600px" enctype='multipart/form-data' action = '/library/insert_file.php'>
+                <div class="layui-form-pane">
+                  	<div class="layui-form-item">
+						<input type = 'file' name = 'books'>
+						<input type = 'submit' value = '上传文件'>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div style="background-color:rgb(199, 206, 199); width: 100%; height: 25px;">
+			<span class="x-left" style="line-height:25px">录入结果 : </span>
+		</div>
+
+		<table class="layui-table">
+			<thead>
+				<tr>
+					<th width="5%" style="text-align:center;">书号</th>
+					<th width="10%" style="text-align:center;">类别</th>
+					<th width="25%" style="text-align:center;" >书名</th>
+					<th width="20%"style="text-align:center;">出版社</th>
+					<th width="6%"style="text-align:center;">年份</th>
+					<th width="15%"style="text-align:center;">作者</th>
+					<th width="6%"style="text-align:center;">价格</th>
+					<th width="8%"style="text-align:center;">总藏书量</th>
+					<th width="5%"style="text-align:center;">库存</th>
+				</tr>
+			</thead>
+			<tbody id="x-img">
+				<?php if($result) {?>
+				<?php foreach($result as $row): ?>
+				<tr>
+                    <td align="center"><?php echo $row['book_id'];?></td>
+                    <td align="center"><?php echo $row['type'];?></td>
+                    <td align="center"><?php echo $row['book_name'];?></td>
+                    <td align="center"><?php echo $row['publisher'];?></td>
+                    <td align="center"><?php echo $row['year'];?></td>
+                    <td align="center"><?php echo $row['author'];?></td>
+                    <td align="center"><?php echo $row['price'];?></td>
+                    <td align="center"><?php echo $row['total_number'];?></td>
+					<td align="center"><?php echo $row['stock'];?></td>
+				</tr>
+				<?php endforeach?>
+				<?php }?>
+		</table>
+
+	</body>
+</html>
