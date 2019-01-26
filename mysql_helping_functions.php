@@ -103,7 +103,7 @@
 			}
 		}
 		else{
-			$result = my_query($link,"insert into book values ($book_id, '{$type}', '{$book_name}', '{$publisher}', $year, '{$author}', $price, $number, $number);");
+			$result = my_query($link,"insert into book values ($book_id, '{$book_name}', '{$type}', '{$publisher}', '{$author}', $price, $year, $number, $number);");
 			$total_number = $number;
 			$stock = $number;
 			return true;
