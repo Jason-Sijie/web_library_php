@@ -25,13 +25,13 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no">
-        <link rel="stylesheet" href="static/css/x-admin.css" media="all">
+        <link rel="stylesheet" href="library/static/css/x-admin.css" media="all">
     </head>
     <body>
         <div class="layui-layout layui-layout-admin">
             <div class="layui-header header header-demo">
                 <div class="layui-main">
-                    <a class="logo" href="./index.html">
+                    <a class="logo" href="library//index.html">
                    		<img src="static/images/logo.png"></img>
                     </a>
                     <ul class="layui-nav" lay-filter="">
@@ -61,14 +61,14 @@
                       		<dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/manage_book.html">
+                                        <a href="javascript:;" _href="library/static/manage_book.html">
                                            <cite>图书查找与编辑</cite>
                                         </a>
                               </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/insert_book.html">
+                                        <a href="javascript:;" _href="library/static/insert_book.html">
                                             <cite>图书录入</cite>
                                         </a>
                                     </dd>
@@ -83,14 +83,14 @@
 							<dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/manager_information.html">
+                                        <a href="javascript:;" _href="library/static/manager_information.html">
                                            <cite>管理员信息</cite>
                                         </a>
                               </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/manager_create.html">
+                                        <a href="javascript:;" _href="library/static/manager_create.html">
                                             <cite>注册新管理员</cite>
                                         </a>
                                     </dd>
@@ -105,14 +105,14 @@
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/card_information.html">
+                                        <a href="javascript:;" _href="library/static/card_information.html">
                                            <cite>借书证查询与删除</cite>
                                         </a>
                               </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/card_create.html">
+                                        <a href="javascript:;" _href="library/static/card_create.html">
                                             <cite>新借书证注册</cite>
                                         </a>
                                     </dd>
@@ -127,14 +127,14 @@
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/borrow_search.html">
+                                        <a href="javascript:;" _href="library/static/borrow_search.html">
                                             <i class="layui-icon"></i><cite>借书</cite>
                                         </a>
                                     </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="static/return_search.html">
+                                        <a href="javascript:;" _href="library/static/return_search.html">
                                             <i class="layui-icon"></i><cite>还书</cite>
                                         </a>
                                     </dd>
