@@ -64,7 +64,7 @@
         $sql = "select * from record where card_id = $card_id and book_id = $book_id;";
         $result = my_query($link, $sql);
         $result = mysqli_fetch_assoc($result);
-        $rt = $result['return_time'];
+        $rt = $result['return_date'];
         if (!empty($rt)){
             $sql = "delete from record where card_id = $card_id and book_id = $book_id;";
             $result = my_query($link, $sql);

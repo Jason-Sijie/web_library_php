@@ -100,7 +100,14 @@
                     <td align="center"><?php echo "{$row['price']}";?></td>
 					<td align="center"><?php echo "{$row['total_number']}";?></td>
 					<td align="center"><?php echo "{$row['total_number']}";?></td>
-					<td class="td-manage"></td>
+					<td class="td-manage">
+    					<form method='GET' action='/library/delete_book.php'>
+							<input type='hidden' name='book_id' value=<?php echo $row['book_id']; ?>>
+    							<div class="x-left" style="width:50px">
+    								<button type = 'submit' class='layui-btn' lay-submit='' lay-filter='sreach'>delete</button>
+    							</div>
+						</form>
+					</td>
 				</tr>
 				<?php endforeach;?>
 				<?php }?>

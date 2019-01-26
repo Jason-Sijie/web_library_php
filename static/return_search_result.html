@@ -73,7 +73,7 @@
                     <td align="center"><?php echo $books[$k]['total_number'];?></td>
                     <td align="center"><?php echo $books[$k]['stock'];?></td>
                     <td class="td-manage">
-    					<form method='POST' action='return_book.php'>
+    					<form method='POST' action='/library/return_book.php'>
 							<input type='hidden' name='book_id' value=<?php echo $row['book_id'];?> >
 							<input type='hidden' name='card_id' value=<?php echo $row['card_id'];?> >
     							<div class="x-left" style="width:50px">

@@ -31,11 +31,11 @@
     $file = fopen('uploads/'.$filename, 'r');
     while($data = fgetcsv($file)){
         $book_id = $data[0];
-        $type = iconv('gb2312','utf-8',$data[1]);
         $book_name = iconv('gb2312','utf-8',$data[2]);
+        $type = iconv('gb2312','utf-8',$data[1]);
+        $author = iconv('gb2312','utf-8',$data[5]);
         $publisher = iconv('gb2312','utf-8',$data[3]);
         $year = $data[4];
-        $author = iconv('gb2312','utf-8',$data[5]);
         $price = $data[6];
         $number = $data[7];
         $total_number = 0;
