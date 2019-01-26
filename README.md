@@ -29,11 +29,7 @@ A web library system implemented in PHP and Apache24 interacting with MySQL data
 
 ### book
 ```
-<<<<<<< HEAD
 CREATE TABLE book (    
-=======
-CREATE TABLE Book (    
->>>>>>> 9bdd344edd3dffe995e74863617bb5230c7849c7
     book_id INT PRIMARY KEY,
     book_name VARCHAR(40) NOT NULL,
     type VARCHAR(30),
