@@ -2,6 +2,7 @@
 
 A web library system implemented in PHP and Apache24 interacting with MySQL database. The web interface is writen in HTML/CSS and JavaScript. The system has login, search book, card manager, administer manager, borrow and return book functions.
 
+The website URL is (http://ec2-52-15-186-28.us-east-2.compute.amazonaws.com/library/)
 
 ## Function
 
