@@ -35,36 +35,36 @@
                 <div class="layui-form-pane">
                     <div class="layui-form-item">
                         <div class="layui-input-inline" style="width:300px">
-            	            <input type="text" name="card_id"  placeholder="卡号" class="layui-input">
+            	            <input type="text" name="card_id"  placeholder="card id" class="layui-input">
                         </div>
                         <div class="layui-input-inline" style="width:300px">
-                            <input type="text" name="card_name"  placeholder="姓名"  class="layui-input">
+                            <input type="text" name="card_name"  placeholder="user name"  class="layui-input">
                         </div>
                         <div class="layui-input-inline" style="width:300px">
-                            <input type="text" name="department"  placeholder="单位"  class="layui-input">
+                            <input type="text" name="department"  placeholder="department"  class="layui-input">
                         </div>
                         <div class="layui-input-inline" style="width:220px">
-                            <input type="text" name="type"  placeholder="类别"  class="layui-input">
+                            <input type="text" name="type"  placeholder="type"  class="layui-input">
                         </div>
                         <div class="layui-input-inline" style="width:60px">
-                            <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" value="搜索全部"/>
+                            <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" value="Search"/>
                         </div>
                     </div>
                 </div> 
 			</form>
 
 			<div style="background-color:rgb(199, 206, 199); width: 100%; height: 25px;">
-				<span class="x-right" style="line-height:25px">共有借书证：<?php echo "{$num}";?> 张</span>
+				<span class="x-right" style="line-height:25px">number of statisfied cards：<?php echo "{$num}";?> </span>
 			</div>
 
 			<table class="layui-table">
 				<thead>
 					<tr>
-						<th width="20%" style="text-align:center;">卡号</th>
-						<th width="20%" style="text-align:center;">姓名</th>
-						<th width="25%" style="text-align:center;">单位</th>
-						<th width="20%"style="text-align:center;">类别</th>
-						<th width="19%"style="text-align:center;">删除图书信息</th>
+						<th width="20%" style="text-align:center;">card id</th>
+						<th width="20%" style="text-align:center;">user name</th>
+						<th width="25%" style="text-align:center;">department</th>
+						<th width="20%"style="text-align:center;">type</th>
+						<th width="19%"style="text-align:center;"></th>
 					</tr>
 				</thead>
 				<tbody id="x-img">

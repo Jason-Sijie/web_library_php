@@ -42,10 +42,10 @@
 								<span class="layui-nav-more"></span>
 							</a>
                         	<dl class="layui-nav-child layui-anim layui-anim-upbit"> <!-- 二级菜单 -->
-                        		<dd><a href="log_out.php">退出登陆</a></dd>
+                        		<dd><a href="log_out.php">Log out</a></dd>
                         </dl>
                       	</li>
-                    	<li class="layui-nav-item x-index"><a href="index.html">前台首页</a></li>
+                    	<li class="layui-nav-item x-index"><a href="index.html">Home page</a></li>
                     </ul>
                 </div>
 			</div>
@@ -56,20 +56,20 @@
                     <!--图书管理-->
                         <li class="layui-nav-item">
                             <a class="javascript:;" href="javascript:;" _href="">
-                               <i class="layui-icon" style="top: 3px;">&#xe62d;</i><cite>图书管理</cite>
+                               <i class="layui-icon" style="top: 3px;">&#xe62d;</i><cite>Book management</cite>
                             </a>
                       		<dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/manage_book.html">
-                                           <cite>图书查找与编辑</cite>
+                                           <cite>Search books</cite>
                                         </a>
                               </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/insert_book.html">
-                                            <cite>图书录入</cite>
+                                            <cite>Insert books</cite>
                                         </a>
                                     </dd>
                                 </dd>
@@ -78,20 +78,20 @@
                         <!--管理员管理-->
                         <li class="layui-nav-item">
                             <a class="javascript:;" href="javascript:;" _href="">
-                                <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>管理员管理</cite>
+                                <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>Admin management</cite>
 							</a>
 							<dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/manager_information.html">
-                                           <cite>管理员信息</cite>
+                                           <cite>Admin information</cite>
                                         </a>
                               </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/manager_create.html">
-                                            <cite>注册新管理员</cite>
+                                            <cite>Sign up new Admin</cite>
                                         </a>
                                     </dd>
                                 </dd>
@@ -100,20 +100,20 @@
                         <!--借书证管理-->
                         <li class="layui-nav-item">
                             <a class="javascript:;" href="javascript:;" _href="">
-                                <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>借书证管理</cite>
+                                <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>Card management</cite>
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/card_information.html">
-                                           <cite>借书证查询与删除</cite>
+                                           <cite>Card information</cite>
                                         </a>
                               </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/card_create.html">
-                                            <cite>新借书证注册</cite>
+                                            <cite>Sign up new card</cite>
                                         </a>
                                     </dd>
                                 </dd>
@@ -122,20 +122,20 @@
                         <!--借书与归还-->
                         <li class="layui-nav-item">
                             <a class="javascript:;" href="javascript:;">
-                                <i class="layui-icon" style="top: 3px;">&#xe629;</i><cite>借书与归还</cite>
+                                <i class="layui-icon" style="top: 3px;">&#xe629;</i><cite>Borrow and Return</cite>
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/borrow_search.html">
-                                            <i class="layui-icon"></i><cite>借书</cite>
+                                            <i class="layui-icon"></i><cite>Borrow book</cite>
                                         </a>
                                     </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="/library/static/return_search.html">
-                                            <i class="layui-icon"></i><cite>还书</cite>
+                                            <i class="layui-icon"></i><cite>Return book</cite>
                                         </a>
                                     </dd>
                                 </dd>

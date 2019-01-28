@@ -34,31 +34,31 @@
                         <div class="layui-form-pane">
                           <div class="layui-form-item">
                             <div class="layui-input-inline" style="width:300px">
-                              <input type="text" name="manager_id"  placeholder="管理员ID" class="layui-input">
+                              <input type="text" name="manager_id"  placeholder="Admin ID" class="layui-input">
                             </div>
                             <div class="layui-input-inline" style="width:300px">
-                                    <input type="text" name="manager_name"  placeholder="姓名"  class="layui-input">
+                                    <input type="text" name="manager_name"  placeholder="Admin name"  class="layui-input">
                             </div>
                             <div class="layui-input-inline" style="width:220px">
-                                    <input type="text" name="phone"  placeholder="联系方式"  class="layui-input">
+                                    <input type="text" name="phone"  placeholder="phone"  class="layui-input">
                             </div>
                             <div class="layui-input-inline" style="width:60px">
-                                <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" value="搜索全部" />
+                                <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" value="Search" />
                             </div>
                           </div>
                         </div> 
                 </form>
 
 		<div style="background-color:rgb(199, 206, 199); width: 100%; height: 25px;">
-			<span class="x-right" style="line-height:25px">共有管理员：<?php echo "{$num}";?> 名</span>
+			<span class="x-right" style="line-height:25px">number of satisfied Admin：<?php echo "{$num}";?></span>
 		</div>
 		
 		<table class="layui-table">
 			<thead>
 				<tr>
-					<th width="33%" style="text-align:center;">管理员ID</th>
-					<th width="33%" style="text-align:center;">姓名</th>
-					<th width="33%" style="text-align:center;">联系方式</th>
+					<th width="33%" style="text-align:center;">Admin ID</th>
+					<th width="33%" style="text-align:center;">name</th>
+					<th width="33%" style="text-align:center;">phone</th>
 				</tr>
 			</thead>
 			<tbody id="x-img">

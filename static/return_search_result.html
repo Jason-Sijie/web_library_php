@@ -38,22 +38,22 @@
                 </form>
 
 		<div style="background-color:rgb(199, 206, 199); width: 100%; height: 25px;">
-      <span class="x-left" style="line-height:25px">当前卡号为：<?php echo "$card_id";?></span>
-			<span class="x-right" style="line-height:25px">已借书籍：<?php echo "$num";?> 本</span>
+      <span class="x-left" style="line-height:25px">card id：<?php echo "$card_id";?></span>
+			<span class="x-right" style="line-height:25px">records：<?php echo "$num";?></span>
 		</div>
 		
 		<table class="layui-table">
 			<thead>
 				<tr>
-                    <th width="5%" style="text-align:center;">卡号</th>
-                    <th width="15%"style="text-align:center;">姓名</th>
-					<th width="10%" style="text-align:center;">书号</th>
-					<th width="20%" style="text-align:center;">书名</th>
-					<th width="10%"style="text-align:center;">借书时间</th>
-					<th width="10%"style="text-align:center;">归还时间</th>
-					<th width="10%"style="text-align:center;">总藏书量</th>
-                    <th width="10%"style="text-align:center;">库存</th>
-                    <th width="10%"style="text-align:center;">操作</th>
+                    <th width="5%" style="text-align:center;">card id</th>
+                    <th width="15%"style="text-align:center;">user name</th>
+					<th width="10%" style="text-align:center;">book id</th>
+					<th width="20%" style="text-align:center;">book name</th>
+					<th width="10%"style="text-align:center;">borrow date</th>
+					<th width="10%"style="text-align:center;">return date</th>
+					<th width="10%"style="text-align:center;">total amount</th>
+                    <th width="10%"style="text-align:center;">in stock</th>
+                    <th width="10%"style="text-align:center;">operation</th>
 				</tr>
 			</thead>
 			<tbody id="x-img">
@@ -77,7 +77,7 @@
 							<input type='hidden' name='book_id' value=<?php echo $row['book_id'];?> >
 							<input type='hidden' name='card_id' value=<?php echo $row['card_id'];?> >
     							<div class="x-left" style="width:50px">
-    								<button type = 'submit' class='layui-btn' lay-submit='' lay-filter='sreach'>还书</button>
+    								<button type = 'submit' class='layui-btn' lay-submit='' lay-filter='sreach'>return</button>
     							</div>
 						</form>
 					</td>
