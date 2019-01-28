@@ -74,7 +74,7 @@
 	$book = array();
 	mysqli_close($link);
 
-	include_once 'static/manage_book.html'
+	include_once 'static/manage_book_result.html'
 
 ?>
 
